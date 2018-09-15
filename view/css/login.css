@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400");
+
+.LeafBtn{
+  top:50%;
+  left:48%;
+   width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-image: url("../../images/logo75.png");
+    position: absolute;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px #666;
+    transition: .5s;
+}
+.LeafBtn:hover{
+  filter: blur(200px);
+    box-shadow: 0px 5px 53px #666; 
+    transition: box-shadow 1s, filter 10s 1s;
+  }
+.LeafBtn.particle{
+  filter: blur(200px);
+    box-shadow: 0px 2px 23px #666; 
+    transition: 5s;
+}
+
+.app {
+  top:50%;
+  left:50%;
+  background: #FFFFFF;
+  position: absolute;
+  width: 0px; 
+  height: 0px;
+  filter: blur(20px);
+    transition: height .5s, top .5s, width .5s, border-radius .4s .3s, background .2s .8s;
+}
+
+.app.full {
+  top:35%;
+  left:40.5%;
+  position: absolute;
+  border-radius:5px;
+  width: 360px;
+  height: 286px;
+  filter: blur(0px);
+  box-shadow: 0px 2px 5px #666;
+  transition: filter 1s .5s, height .5s, top .5s, width .5s, border-radius .4s .3s, background .2s .8s;
+}
+
+.login-page {
+  display: none;
+  width: 360px;
+  height: 100px;
+  border-radius:5px;
+  filter: blur(0px);
+  transition: height .5s, top .5s, width .5s, border-radius .4s .3s, background .2s .8s;
+  box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12);
+    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 1s; /* Firefox < 16 */
+        -ms-animation: fadein 1s; /* Internet Explorer */
+         -o-animation: fadein 1s; /* Opera < 12.1 */
+            animation: fadein 1s;
+}
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  border-radius:5px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+  font-family: "Lato", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #4CAF50;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: #43A047;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+.form .register-form {
+  display: none;
+}
+.form .verify-form {
+  display: none;
+}
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.container:before, .container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container .info {
+  margin: 50px auto;
+  text-align: center;
+}
+.container .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+.container .info span {
+  color: #4d4d4d;
+  font-size: 12px;
+}
+.container .info span a {
+  color: #000000;
+  text-decoration: none;
+}
+.container .info span .fa {
+  color: #EF3B3A;
+}
+body {
+  background: #19191b; /* fallback for old browsers */
+  
+}
+
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+h1, h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  line-height: 1.35;
+  color: #111;
+  font-weight: 400; }
+
+h5, h6 {
+  margin: 1.414em 0 0.5em;
+  line-height: 1.4;
+  color: #666;
+  font-weight: 400; }
+
+h1 {
+  margin-top: 0;
+  font-size: 2.074em; }
+
+h2 {
+  font-size: 1.728em; }
+
+h3 {
+  font-size: 1.44em; }
+
+h4 {
+  font-size: 1.2em; }
+
+small, h6 {
+  font-size: 0.833em;
+  margin: 0.25em 0; }
+
+var, kbd, samp, code, pre {
+   font-family: Consolas, "Andale Mono", Courier, "Courier New", monospace;
+}
+code {
+   font-size: 1.4rem;
+   margin: 0 .2rem;
+   padding: .3rem .6rem;
+   white-space: nowrap;
+   background: #e5e5e5;
+   border: 1px solid #d8d8d8;
+   border-radius: 3px;
+}
+pre > code {
+   display: block;
+   white-space: pre;
+   line-height: 2;
+   padding: 0;
+   margin: 0;
+}
+pre.prettyprint > code {
+   border: none;
+}
