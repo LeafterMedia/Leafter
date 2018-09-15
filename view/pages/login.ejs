@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Leafter</title>
+    <meta name="description" content="Hello">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="../css/login.css">
+     <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/vendor.css">
+    <link rel="stylesheet" href="../css/login2.css">
+    <!-- script
+    ================================================== -->
+    
+    <script src="../js/modernizr.js"></script>
+    <script src="../js/pace.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+
+</head>
+
+<body id="top">
+
+   
+
+<div>
+
+    <div id="LeafBtn" class="LeafBtn">
+    </div>
+
+    <div id="app" class="app">               
+     
+        <div id="DaForm" class="login-page">
+            <div class="form">                
+
+                <form id="REGISTER_form" class="register-form">
+                    <input id="REGISTER_username" type="text" placeholder="Choose a username"/>
+                    <input id="REGISTER_phone" type="text" placeholder="Your phone number"/>                    
+                    <button id="REGISTER_validation_button" href="#">create</button>                    
+                    <p class="message">Already registered? <a href="#">Sign In</a></p>
+                </form>
+
+                <form id="REGISTER_Verify_form" class="verify-form">
+                    <p class="message">Use the verification code we sent you to validate your phone number</p>
+                    <input id="REGISTER_2fa" type="text" placeholder="Verification code"/>
+                    <p id="retry_status" class="message"></p>
+                    <button id="REGISTER_verify_2fa_button" href="#">verify</button>
+                </form>
+
+                <div id="REGISTER_Password_Policy" class="password-policy">
+                    <p class="message">Leaf is different from other types of platforms. Your account is worth something. Therefore, you need a proper password in order to protect yourself from theft. <br>
+                    Here is a safe generated password. Please save it carefuly, as passwords cannot be recovered. If you loose it, nobody will ever be able to recover your account, Leafter LLC included.</p>
+                    <code id="GeneratedMasterPassword"></code>
+
+                    <input type="checkbox" id="check1"/>
+                    <label for="scales">I understand that neither Leafter nor any entity can recover my password</label>
+
+                    <input type="checkbox" id="check2"/>
+                    <label for="scales">I have correctly saved my password</label>
+
+                    <button id="REGISTER_agree_on_password_policy" style="display: none;" href="#">i agree</button>
+
+                </div>
+
+                <div id="REGISTER_Checkout" class="password-checkout">
+                    <p class="message">To check if you saved your password correctly, please enter it here.</p>
+
+                    <input id="REGISTER_Password_Checkout" type="password"/>
+                    <button id="REGISTER_verify_Password_Checkout" href="#">check</button>
+                </div>
+
+                <div id="REGISTER_Success" class="register-success">
+                    <h1>Wonderful!</h1>
+                    <br>
+                    <p>Your account creation is a success !</p>
+                    <p>Refresh this page to login</p>
+                </div>
+
+                <form class="login-form">
+                    <h1>Who are you?</h1>
+                    <br>
+                    <input id="LOGIN_username" type="text" placeholder="Enter your username"/>
+                    <input id="LOGIN_WIF" type="password" placeholder="Password or WIF"/>
+                    <button id="LOGIN_validation_button" href="#">login</button>
+                    <p class="message">Not registered? <a href="#">Create an account</a></p>
+                </form>
+
+                <div id="REGISTER_Error_Already_Used" class="REGISTER_Error_Already_Used">
+                    <h1>Error!</h1>
+                    <br>
+                    <p>The phone number you provided has already been used.</p>
+                </div>
+
+                <div id="REGISTER_Error_Phone_Number" class="REGISTER_Error_Phone_Number">
+                    <h1>Error!</h1>
+                    <br>
+                    <p>There is an error in the phone number you provided. Refresh this page to retry.</p>
+                </div>
+
+                <div id="REGISTER_Error_Abort" class="REGISTER_Error_Abort">
+                    <h1>Error!</h1>
+                    <br>
+                    <p>The phone verification failed. Please retry in 10 minutes.</p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader">
+            <div class="line-scale">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/login/bundle.js"></script>
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/plugins.js"></script>
+    <script src="../js/main.js"></script>
+    
+
+</body>
+
+</html>
