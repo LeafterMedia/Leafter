@@ -1,0 +1,30 @@
+{
+  "name": "Leafter",
+  "version": "0.0.1",
+  "description": "Get rewarded for your quality thoughts, with the power of Leaf blockchain!",
+  "main": "./leafter.js",
+  "author": "kingswisdom",
+  "scripts": {
+    "start": "node leafter.js",
+    "bundle_Trending": "browserify ./view/js/src/trending/append_Trending_Posts.js -o ./view/js/trending/bundle.js",
+    "bundle_Hot": "browserify ./view/js/src/hot/append_Hot_Posts.js -o ./view/js/hot/bundle.js",
+    "bundle_Created": "browserify ./view/js/src/created/append_Created_Posts.js -o ./view/js/created/bundle.js",
+    "bundle_Popular": "browserify ./view/js/src/widgets/popularPosts/append_Popular_Posts.js -o ./view/js/widgets/popularPosts/bundle.js",
+    "bundle_PostReader": "browserify ./view/js/src/postReader/append_Article_To_Page.js -o ./view/js/postReader/bundle.js",
+    "bundle_TrendingTags": "browserify ./view/js/src/widgets/trendingTags/append_Trending_Tags.js -o ./view/js/widgets/trendingTags/bundle.js",
+    "build": "npm run bundle_Trending && npm run bundle_Hot && npm run bundle_Created && npm run bundle_PostReader && npm run bundle_Popular && npm run bundle_TrendingTags"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "bufferutil": "^3.0.3",
+    "ejs": "^2.5.8",
+    "express": "^4.16.3",
+    "mongodb": "^2.2.30",
+    "path": "^0.12.7",
+    "scryptsy": "^2.0.0",
+    "socket.io": "^2.0.3",
+    "socket.io-client": "^2.1.0",
+    "steem": "^0.7.1",
+    "xss-filters": "^1.2.7"
+  }
+}

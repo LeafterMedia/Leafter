@@ -1,0 +1,45 @@
+{
+	"db"							:	"mongodb://127.0.0.1/leafter",
+
+	"leafter"						:	{
+											"owner"	: "leafter",
+											"keys"	: 	{
+															"owner" : 	{
+																			"public" : "",
+																			"private": ""
+																		},
+															"active" : 	{
+																			"public" : "",
+																			"private": ""
+																		},
+															"posting" : 	{
+																			"public" : "",
+																			"private": ""
+																		},
+															"memo" : 	{
+																			"public" : "",
+																			"private": ""
+																		}
+														}
+										},
+
+	"accountCreationParams"			:	{
+											"fee"			: "",
+											"delegation"	: "",
+											"jsonMetadata"	: "",
+											"extensions"	: ""
+										},
+	
+	"SafeSocket" 					:	{	
+											"register": {
+															"privateKey": "5K8AruCpTY6gVeQRMd5UpeuoVR2YheRCjUDAVFrfiahZU4bBccj", 
+															"publicKey"	: "STM5jixkNBqJXNtX9vy2GjaqpX2d5jXrcjRXgh1WU5fXZhnDJrLM8"
+														}
+										},
+
+	"twilio" 	 					:	{
+											"api_key":	"",
+											"method" :	"sms"
+
+										}
+}
